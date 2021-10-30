@@ -112,6 +112,7 @@ $(function(){
 
   // Set year in the footer
   document.getElementById("getyear").innerHTML = (new Date().getFullYear());
+  document.getElementById("demo").innerHTML = "Screen Width: " + screen.width;
 });
 
 function findLocaleMatch() {
