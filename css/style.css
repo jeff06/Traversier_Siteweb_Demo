@@ -129,6 +129,12 @@ p {
     padding-left: 25px;
   }
 }
+@media (max-width: 325px) {
+  .custom-navbar .navbar-brand  {
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+}
 
 /* home section */
 /*https://pixabay.com/fr/photos/nature-plage-le-coucher-du-soleil-6723133/*/
