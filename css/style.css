@@ -118,16 +118,13 @@ p {
           align-items: center;
         }
 }
-@media(max-width:768px){
-
-}
 
 @media (max-width: 450px) {
   .custom-navbar .navbar-brand  {
     padding-left: 60px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .custom-navbar .navbar-brand  {
     padding-left: 25px;
   }
