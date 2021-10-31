@@ -137,6 +137,11 @@ function applyTraduction(containers)
       var lang = local.substr(0,2);
       if(key)
       {
+        var textValue = langdata.languages[lang].strings[key];
+        if(textValue === "")
+        {
+          element.setAttribute("style", "display:none;");
+        }
         element.textContent = langdata.languages[lang].strings[key];
         element.removeAttribute('data-key');   
       }
@@ -161,6 +166,7 @@ const langdata = {
   "languages": {
       "en": {
           "strings": {
+              "informationUrgente": "Display important information so that everyboday can see it.", 
               "accueil": "Home",
               "tarifsHoraire": "Rates & Schedule",
               "vuePanoramique": "Panormic view",
@@ -210,6 +216,7 @@ const langdata = {
       },
       "fr": {
           "strings": {
+              "informationUrgente": "Mettre une information important pour que tout le monde puisse voir ce qui se passe", 
               "accueil": "Accueil",
               "tarifsHoraire": "Tarifs et horaire",
               "vuePanoramique": "Vue panoramique",
