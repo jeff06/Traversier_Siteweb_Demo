@@ -5,6 +5,11 @@ Blaster Template
 http://www.templatemo.com/tm-472-blaster
 
 */
+:root {
+  --menu-hover: #FFD321;
+  --title-color: #404040;
+  --menu-item-color: #404040;
+}
 
 body
 {
@@ -44,7 +49,7 @@ p {
 	line-height: 28px;
 }
 
-#about, #contact {
+#about, #nousJoindre {
 	padding-top: 150px;
 	padding-bottom: 25px;
 }
@@ -60,7 +65,7 @@ p {
     margin-bottom: 0;
 }
 .custom-navbar .navbar-brand  {
-	color: #303030;
+	color: var(--title-color);
 	font-size: 40px;
   padding-left: 100px;
 }
@@ -71,7 +76,7 @@ p {
     color: #fff;
 }
 .custom-navbar .nav li a {
-    color: #505050;
+    color: var(--menu-item-color);
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 4px;
@@ -80,7 +85,7 @@ p {
 	transition: all 0.3s ease-in-out;
 }
 .custom-navbar .nav li a:hover {
-  	background: #FFD321;
+  	background: var(--menu-hover);
   	transition: all 0.3s ease-in-out;
 }
 .custom-navbar .nav > li > a:focus {
@@ -88,14 +93,14 @@ p {
   	outline: none;
 }
 .custom-navbar .nav li.active > a {
-    background-color: #FFD321;
+    background-color: var(--menu-hover);
 }
 .custom-navbar .navbar-toggle {
     border: none;
     padding-top: 10px;
 }
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #FFD321;
+    background: var(--menu-hover);
     border-color: transparent;
 }
 #navbar .container
@@ -176,6 +181,10 @@ p {
   color: #ffffff;
 }
 
+.slogantZone{
+  margin-bottom: 5%;
+}
+
 /* about section */
 #about .col-md-4 .fa {
   background: #FFD321;
@@ -207,13 +216,10 @@ p {
   box-shadow: none;
   height: 6px;
 }
-#about .progress .progress-bar-primary {
-  background: #FFD321;
-}
 
 /* portfolio section */
 #portfolio {
-  padding-top: 100px;
+  padding-top: 160px;
   background: #f9f9f9;
   text-align: center;
 }
@@ -255,13 +261,6 @@ p {
     text-decoration: none;
     transition: all 0.4s ease-in-out;
 }
-.filter-wrapper li .selected,
-.filter-wrapper li a:focus,
-.filter-wrapper li a:hover {
-    background: #FFD321;
-    color: #ffffff;
-    outline: none;
-  }
 
 /* ISOTOPE BOX CSS */
 .iso-box-section {
@@ -297,39 +296,39 @@ p {
 }
 
 /* contact section */
-#contact {
+#nousJoindre {
   background: #f9f9f9;
   text-align: center;
 }
-#contact .fa {
+#nousJoindre .fa {
   font-size: 40px;
 }
-#contact form {
+#nousJoindre form {
   padding-top: 80px;
 }
-#contact .form-control {
+#nousJoindre .form-control {
   border-radius: 0;
   box-shadow: none;
   margin-top: 10px;
   margin-bottom: 10px;
   transition: all 0.4s ease-in-out;
 }
-#contact .form-control:focus {
+#nousJoindre .form-control:focus {
   border: 2px solid #808080;
 }
-#contact input {
+#nousJoindre input {
   height: 50px;
 }
-#contact input[type="submit"] {
+#nousJoindre input[type="submit"] {
   border: 2px solid #808080;
   margin-top: 18px;
   height: 54px;
 }
-#contact input[type="submit"]:hover {
+#nousJoindre input[type="submit"]:hover {
   background: #808080;
   color: #ffffff;
 }
-#contact textarea {
+#nousJoindre textarea {
   height: 170px;
 }
 .contact-info-box h3 { font-size: 16px; }
@@ -369,7 +368,7 @@ footer {
   margin-right: 10px;
 }
 .social-icon li a:hover {
-  background: #FFD321;
+  background: var(--menu-hover);
 }
 
 /* copyright section */
@@ -384,27 +383,6 @@ footer {
 }
 #copyright a {
 	color: #fff;
-}
-#copyright a:hover {
-	color: #FFD321;
-	text-decoration: none;
-	transition: all 0.4s ease-in-out;
-}
-#copyright .fa {
-  background: #383838;
-  color: #ffffff;
-  font-size: 18px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  transition: all 0.4s ease-in-out;
-}
-#copyright .fa:hover {
-  background: #FFD321;
-  color: #000;
 }
 
 @media screen and (min-width: 992px) {
@@ -423,14 +401,22 @@ footer {
   #about img {
     padding-top: 40px;
   }
-  #contact form {
+  #nousJoindre form {
     padding-top: 30px;
+  }
+  .slogantZone
+  {
+    margin-bottom: 10%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .contact-info-box { margin-bottom: 20px; }
   .contact-info-box:last-child { margin-bottom: 0; }
+  .slogantZone
+  {
+    margin-bottom: 20%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -440,8 +426,12 @@ footer {
   #about .col-md-4 .fa {
     margin-top: 32px;
   }
-  #contact h3 {
+  #nousJoindre h3 {
     font-size: 16px;
     padding-bottom: 40px;
+  }
+  .slogantZone
+  {
+    margin-bottom: 30%;
   }
 }

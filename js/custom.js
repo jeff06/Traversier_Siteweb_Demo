@@ -111,7 +111,10 @@ $(function(){
   container.lang = lang;
 
   // Set year in the footer
-  document.getElementById("getyear").innerHTML = (new Date().getFullYear());
+  var list = document.getElementsByName("getyear");
+  for (let item of list) {
+    item.innerHTML = (new Date().getFullYear());
+  }
 });
 
 function findLocaleMatch() {
