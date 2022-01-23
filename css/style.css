@@ -107,39 +107,6 @@ p {
 {
   display: inline;
 }
-@media(min-width:768px){
-    .custom-navbar {
-            background: #ffffff;
-            border-bottom: 0;
-            background: 0 0;
-         }
-    .custom-navbar.top-nav-collapse {
-            padding: 14px;
-            background: #fff;
-            border-bottom: 1px solid #eeeeee;
-        }
-        .navbar-brand  {
-          display: flex;
-          align-items: center;
-        }
-}
-
-@media (max-width: 450px) {
-  .custom-navbar .navbar-brand  {
-    padding-left: 50px;
-  }
-}
-@media (max-width: 360px) {
-  .custom-navbar .navbar-brand  {
-    padding-left: 25px;
-  }
-}
-@media (max-width: 325px) {
-  .custom-navbar .navbar-brand  {
-    padding-left: 15px;
-    padding-right: 5px;
-  }
-}
 
 /* home section */
 /*https://pixabay.com/fr/photos/nature-plage-le-coucher-du-soleil-6723133/*/
@@ -183,6 +150,11 @@ p {
 
 .slogantZone{
   margin-bottom: 5%;
+}
+
+.slogantZoneNew{
+  margin-top: 65%;
+  color: #fff;
 }
 
 /* about section */
@@ -385,16 +357,7 @@ footer {
 	color: #fff;
 }
 
-@media screen and (min-width: 992px) {
-  @-moz-document url-prefix() {
-    #portfolio .col-lg-4,
-    #portfolio .col-md-4 {
-      width: 33.333%;
-    }
-  }    
-}
-
-@media ( max-width: 980px ) {
+@media ( max-width: 990px ) {
   .custom-navbar .navbar-brand {
     font-size: 24px;
   }
@@ -408,14 +371,49 @@ footer {
   {
     margin-bottom: 10%;
   }
+  .slogantZoneNew{
+    margin-top: 70%;
+    color: #fff;
+  }
+  @-moz-document url-prefix() {
+    #portfolio .col-lg-4,
+    #portfolio .col-md-4 {
+      width: 33.333%;
+    }
+  } 
 }
 
-@media screen and (max-width: 767px) {
+@media(min-width:768px){
+  .custom-navbar {
+          background: #ffffff;
+          border-bottom: 0;
+          background: 0 0;
+       }
+  .custom-navbar.top-nav-collapse {
+          padding: 14px;
+          background: #fff;
+          border-bottom: 1px solid #eeeeee;
+      }
+      .navbar-brand  {
+        display: flex;
+        align-items: center;
+      }
+      .slogantZoneNew{
+        margin-bottom: 30%;
+        color: #fff;
+      }
+}
+
+@media screen and (max-width: 768px) {
   .contact-info-box { margin-bottom: 20px; }
   .contact-info-box:last-child { margin-bottom: 0; }
   .slogantZone
   {
     margin-bottom: 20%;
+  }
+  .slogantZoneNew{
+    margin-top: 75%;
+    color: #fff;
   }
 }
 
@@ -433,5 +431,34 @@ footer {
   .slogantZone
   {
     margin-bottom: 30%;
+  }
+  .slogantZoneNew{
+    margin-top: 110%;
+    color: #fff;
+  }
+  .custom-navbar .navbar-brand  {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .custom-navbar .navbar-brand  {
+    padding-left: 25px;
+  }
+  .slogantZoneNew{
+    margin-top: 110%;
+    color: #fff;
+  }
+}
+
+  
+@media (max-width: 325px) {
+  .custom-navbar .navbar-brand  {
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+  .slogantZoneNew{
+    margin-top: 73%;
+    color: #fff;
   }
 }
